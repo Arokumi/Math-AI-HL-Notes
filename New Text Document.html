@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math AI HL Notes Hub</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Fira+Code:wght@400&display=swap');
+
+        /* Reset default styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f6f4f3;
+            color: #080708;
+            font-family: 'Fira Code', monospace;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            color: #080708;
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #183059;
+            position: relative;
+        }
+
+        .container {
+            width: 60%;
+            margin: 20px auto;
+            text-align: left;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 15px 0;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        li::before {
+            content: '➤';
+            color: #832232;
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        a {
+            color: #080708;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:visited {
+            /* color: #103067; */
+        }
+
+        a:hover {
+            color: #832232;
+        }
+
+        .visited-link {
+            color: #103067 !important;
+            font-weight: bold;
+            position: relative;
+            
+        }
+
+        .visited-link::after {
+            content: "✔";
+            color: #27ae60;
+            font-size: 18px;
+            margin-left: 10px;
+            position: absolute;
+            right: -25px;
+            top: 2px;
+        }
+
+        /* Reset button styles */
+        .reset-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #832232;
+            color: #f6f4f3;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .reset-button:hover {
+            background-color: #183059;
+        }
+
+    </style>
+</head>
+<body>
+	<div class="bubble one"></div>
+    <div class="bubble two"></div>
+    <div class="bubble three"></div>
+	
+    <h1>Math AI HL Notes Hub</h1>
+	<button class="reset-button" onclick="resetVisitedLinks()">Reset Read Status</button>
+    <br>
+    <br>
+    <div class="container">
+        <h2>Topic 1: Numbers and Algebra</h2>
+        <ul>
+            <li><a href="Matrices.pdf" onclick="markVisited(this)">Matrices</a></li>
+            <li><a href="Matrix Transformations.pdf">Matrix Transformations</a></li>
+            <li><a href="Arithmetic Sequences and Series.pdf">Arithmetic Sequences and Series</a></li>
+            <li><a href="Geometric Sequences and Series.pdf">Geometric Sequences and Series</a></li>
+            <li><a href="Financial Mathematics.pdf">Financial Mathematics</a></li>
+            <li><a href="Complex Numbers.pdf">Complex Numbers</a></li>
+            <li><a href="Polar and Euler Form.pdf">Polar and Euler Form</a></li>
+            <li><a href="The Complex Plane.pdf">The Complex Plane</a></li>
+            <li><a href="Direct and Inverse Variation Functions.pdf">Direct and Inverse Variation Functions</a></li>
+        </ul>
+
+        <br>
+        <br>
+        
+        <h2>Topic 2: Functions</h2>
+        <ul>
+            <li><a href="Relations and Functions.pdf">Relations and Functions</a></li>
+            <li><a href="Function Notations and Linear Functions.pdf">Function Notations and Linear Functions</a></li>
+            <li><a href="Equations of A Straight Line.pdf">Equations of A Straight Line</a></li>
+            <li><a href="Inverse Functions.pdf">Inverse Functions</a></li>
+            <li><a href="Composite Functions.pdf">Composite Functions</a></li>
+            <li><a href="Piecewise Functions.pdf">Piecewise Functions</a></li>
+            <li><a href="Quadratic Models.pdf">Quadratic Models</a></li>
+            <li><a href="Quadratic Regression.pdf">Quadratic Regression</a></li>
+            <li><a href="Linear Regression.pdf">Linear Regression</a></li>
+            <li><a href="Cubic Models.pdf">Cubic Models</a></li>
+            <li><a href="Power Functions.pdf">Power Functions</a></li>
+            <li><a href="Sinusoidal Functions.pdf">Sinusoidal Functions</a></li>
+            <li><a href="Logistic Models.pdf">Logistic Models</a></li>
+            <li><a href="Exponential Modelling.pdf">Exponential Modelling</a></li>
+            <li><a href="Exponential Models.pdf">Exponential Models</a></li>
+            <li><a href="Properties of Logarithms.pdf">Properties of Logarithms</a></li>
+        </ul>
+
+        <br>
+        <br>        
+        
+        <h2>Topic 3: Geometry and Trigonometry</h2>
+        <ul>
+            <li><a href="Vector Geometric Proofs.pdf">Vector Geometric Proofs</a></li>
+            <li><a href="Vector Products.pdf">Vector Products</a></li>
+            <li><a href="Vector Applications and Kinematics.pdf">Vector Applications and Kinematics</a></li>
+            <li><a href="Vector Equations 1.pdf">Vector Equations 1</a></li>
+            <li><a href="Vector Equations 2.pdf">Vector Equations 2</a></li>
+            <li><a href="Eigenvectors and Eigenvalues.pdf">Eigenvectors and Eigenvalues</a></li>
+            <li><a href="Magnitude and Direction of Vectors.pdf">Magnitude and Direction of Vectors</a></li>
+            <li><a href="Position Vectors.pdf">Position Vectors</a></li>
+            <li><a href="Introduction to Vectors.pdf">Introduction to Vectors</a></li>
+            <li><a href="Triangulation and Area of a Triangle.pdf">Triangulation and Area of a Triangle</a></li>
+            <li><a href="Bearings.pdf">Bearings</a></li>
+            <li><a href="Trigonometric Ratios in Right Angled Triangles.pdf">Trigonometric Ratios in Right Angled Triangles</a></li>
+            <li><a href="Arc Length and Area of a Sector.pdf">Arc Length and Area of a Sector</a></li>
+            <li><a href="Volume and Surface Area.pdf">Volume and Surface Area</a></li>
+            <li><a href="Voronoi Diagrams.pdf">Voronoi Diagrams</a></li>
+            <li><a href="Adding a Site to a Voronoi Diagram.pdf">Adding a Site to a Voronoi Diagram</a></li>
+            <li><a href="Parallel and Perpendicular Lines.pdf">Parallel and Perpendicular Lines</a></li>
+            <li><a href="Nearest Neighbour Interpolation and The Largest Empty Circle Problem.pdf">Nearest Neighbour Interpolation</a></li>
+            <li><a href="Graph Theory.pdf">Graph Theory</a></li>
+        </ul>
+
+        <br>
+        <br>
+
+        <h2>Topic 4: Statistics and Probability</h2>
+        <ul>
+            <li><a href="Regression and Correlation.pdf">Regression and Correlation</a></li>
+            <li><a href="Random Variables and Probability Distributions.pdf">Random Variables and Probability Distributions</a></li>
+            <li><a href="Continuous Random Variables and Distribution Transformations.pdf">Continuous Random Variables and Distribution Transformations</a></li>
+            <li><a href="Probability of Events.pdf">Probability of Events</a></li>
+            <li><a href="Simple Probability and Probability Rules.pdf">Simple Probability and Probability Rules</a></li>
+            <li><a href="Presentation of Data.pdf">Presentation of Data</a></li>
+            <li><a href="Descriptive Statistics.pdf">Descriptive Statistics</a></li>
+            <li><a href="Centrality and Dispersion.pdf">Centrality and Dispersion</a></li>
+            <li><a href="Test of Hypothesis for Binomial Poisson and Goodness of Fit.pdf">Test of Hypothesis</a></li>
+            <li><a href="Introduction to Test of Hypothesis.pdf">Introduction to Test of Hypothesis</a></li>
+            <li><a href="Transformation of Random Variables.pdf">Transformation of Random Variables</a></li>
+            <li><a href="Poisson Distributions.pdf">Poisson Distributions</a></li>
+            <li><a href="Normal Distributions.pdf">Normal Distribution</a></li>
+            <li><a href="Binomial Distributions.pdf">Binomial Distribution</a></li>
+            <li><a href="Test of Significance.pdf">Test of Significance</a></li>
+            <li><a href="Probability and Random Variables.pdf">Probability and Random Variables</a></li>
+            <li><a href="Long Term State and Systems.pdf">Long Term State and Systems</a></li>
+            <li><a href="Transition Diagrams and Systems.pdf">Transition Diagrams and Systems</a></li>
+        </ul>
+
+        <br>
+        <br>
+        
+        <h2>Topic 5: Calculus</h2>
+        <ul>
+            <li><a href="Differential Equations.pdf">Differential Equations</a></li>
+            <li><a href="Euler’s Method.pdf">Euler’s Method</a></li>
+            <li><a href="Integral Calculus.pdf">Integral Calculus</a></li>
+            <li><a href="Calculus.pdf">Calculus</a></li>
+            <li><a href="Differentiation Rules.pdf">Differentiation Rules</a></li>
+            <li><a href="Sketching Derivative Graphs.pdf">Sketching Derivative Graphs</a></li>
+            <li><a href="Applications of Differentiation.pdf">Applications of Differentiation</a></li>
+            <li><a href="Volumes of Revolution.pdf">Volumes of Revolution</a></li>
+            <li><a href="Area Between Curves and Volumes of Revolution.pdf">Area Between Curves and Volumes of Revolution</a></li>
+            <li><a href="Kinematics Solution.pdf">Kinematics Solution</a></li>
+        </ul>
+        
+    </div>
+	<script>
+        function loadVisitedLinks() {
+            const visitedLinks = JSON.parse(localStorage.getItem('visitedLinks')) || [];
+            visitedLinks.forEach(href => {
+                const link = document.querySelector(`a[href="${href}"]`);
+                if (link) link.classList.add('visited-link');
+            });
+        }
+    
+        function markVisited(link) {
+            const href = link.getAttribute('href');
+            let visitedLinks = JSON.parse(localStorage.getItem('visitedLinks')) || [];
+    
+            if (!visitedLinks.includes(href)) {
+                visitedLinks.push(href);
+                localStorage.setItem('visitedLinks', JSON.stringify(visitedLinks));
+            }
+            link.classList.add('visited-link');
+        }
+    
+        function resetVisitedLinks() {
+            localStorage.removeItem('visitedLinks');
+            document.querySelectorAll('a').forEach(link => {
+                link.classList.remove('visited-link');
+            });
+        }
+    
+        window.onload = function () {
+            loadVisitedLinks();
+            const links = document.querySelectorAll('a');
+    
+            links.forEach(link => {
+                // Detect ANY form of activation: Left, Middle, Ctrl+Click, Cmd+Click
+                link.addEventListener('mousedown', function (event) {
+                    if (
+                        event.button === 0 || // left click
+                        event.button === 1 || // middle click
+                        event.ctrlKey ||      // Ctrl+Click (Windows/Linux)
+                        event.metaKey         // Cmd+Click (Mac)
+                    ) {
+                        markVisited(link);
+                    }
+                });
+    
+                // Also catch keyboard navigation (Enter key etc.)
+                link.addEventListener('keydown', function (event) {
+                    if (event.key === 'Enter') {
+                        markVisited(link);
+                    }
+                });
+            });
+        };
+    </script>
+
+</body>
+</html>
